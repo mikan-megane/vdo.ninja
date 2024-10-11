@@ -288,7 +288,7 @@
     "if-enabled-you-must-manually-add-a-video-to-a-scene-for-it-to-appear-": "有効にすると、動画を表示させるために手動でシーンに追加する必要があります。",
     "set-to-default-audio-channel": "デフォルトのオーディオチャンネルに設定",
     "set-to-audio-channel-7": "オーディオチャンネル7に設定",
-    "set-to-audio-channel-8": "オーディオチャンネル8に設定",
+    "set-to-audio-channel-8": "オーディオチャンネル8に設定"
   },
   "innerHTML": {
     "logo-header": "\n<font id=\"qos\">V</font>DO.Ninja \n",
