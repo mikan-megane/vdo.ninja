@@ -1,0 +1,8 @@
+version: "1"
+rules:
+  - base: develop
+    upstream: steveseguin:develop
+    mergeMethod: hardreset
+  - base: ja
+    upstream: steveseguin:develop
+    mergeMethod: merge
