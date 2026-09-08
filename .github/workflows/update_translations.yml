@@ -39,8 +39,8 @@ jobs:
           env:
             OC_API_KEY: ${{ secrets.OC_API_KEY }}
             TRANSLATION_API_PROVIDER: opencode
-            TRANSLATION_API_URL: https://opencode.ai/zen/v1/chat/completions
-            TRANSLATION_MODELS: deepseek-v4-flash-free,nemotron-3-super-free,big-pickle,minimax-m2.7
+            TRANSLATION_API_URL: https://opencode.ai/zen/go/v1/chat/completions
+            TRANSLATION_MODELS: auto
             TARGET_LANGUAGES: all
             MAX_TRANSLATION_KEYS: "50"
           run: node .github/ci-translateMissingKeys.js
@@ -51,9 +51,9 @@ jobs:
             branch: generated_translations
             title: "[VDONinja Bot] Generated missing translations"
             body: |
-              Generated missing translation keys using OpenCode Zen.
+              Generated missing translation keys using OpenCode (free models, then Go).
 
-              - Model chain: `deepseek-v4-flash-free,nemotron-3-super-free,big-pickle,minimax-m2.7`
+              - Model chain: `auto`
               - Target languages: `all`
               - Maximum keys: `50`
             labels: i18n
